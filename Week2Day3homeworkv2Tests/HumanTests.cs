@@ -16,35 +16,45 @@ namespace Week2Day3homeworkv2.Tests
         {
             Human myTestHuman = new Human("Brown");
             Assert.IsNotNull(myTestHuman.HairColor);
-            Assert.AreEqual(2, myTestHuman.NumLegs());
-            Assert.AreEqual(1, myTestHuman.AvgNumOffspring());
             Assert.AreEqual(null, myTestHuman.Name);
             myTestHuman.Name = "Jim";
             Assert.AreEqual("Jim", myTestHuman.Name);
             Assert.AreEqual(null, myTestHuman.Species);
-            myTestHuman.Name = "Developer";
+            myTestHuman.Species = "Developer";
             Assert.AreEqual("Developer", myTestHuman.Species);
             Assert.AreEqual(null, myTestHuman.ExternalCovering);
-            myTestHuman.Name = "Skin";
+            myTestHuman.ExternalCovering = "Skin";
             Assert.AreEqual("Skin", myTestHuman.ExternalCovering);
         }
 
         [TestMethod()]
         public void HumanTest1()
         {
-            //Assert.Fail();
+            Human myTestHuman = new Human("Brown");
+            Assert.IsNotNull(myTestHuman.HairColor);
+            Assert.AreEqual(null, myTestHuman.Name);
+            myTestHuman.Name = "Jim";
+            Assert.AreEqual("Jim", myTestHuman.Name);
+            Assert.AreEqual(null, myTestHuman.Species);
+            myTestHuman.Species = "Developer";
+            Assert.AreEqual("Developer", myTestHuman.Species);
+            Assert.AreEqual(null, myTestHuman.ExternalCovering);
+            myTestHuman.ExternalCovering = "Skin";
+            Assert.AreEqual("Skin", myTestHuman.ExternalCovering);
         }
 
         [TestMethod()]
         public void NumLegsTest()
         {
-            //Assert.Fail();
+            Human myTestHuman = new Human("Brown");
+            Assert.AreEqual(2, myTestHuman.NumLegs());
         }
 
         [TestMethod()]
         public void AvgNumOffspringTest()
         {
-            //Assert.Fail();
+            Human myTestHuman = new Human("Brown");
+            Assert.AreEqual(1, myTestHuman.AvgNumOffspring());
         }
     }
 }
