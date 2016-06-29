@@ -11,6 +11,19 @@ namespace Week2Day3homeworkv2
         public Lizard()
         {
         }
+        public string myName
+        {
+            get { return base.Name; }
+        }
+        public string mySpecies
+        {
+            get { return base.Species; }
+        }
+        public string myExternalCovering
+        {
+            get { return base.ExternalCovering; }
+        }
+
         public new string Species { get; set; }
         public new string ExternalCovering { get; set; }
         public new int AvgWeight { get; set; }
